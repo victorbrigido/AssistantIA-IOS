@@ -7,18 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1606F98A2B88CCB700F43BD9 /* VoiceRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1606F9892B88CCB700F43BD9 /* VoiceRecognition.swift */; };
+		1606F98D2B88D3EF00F43BD9 /* TextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1606F98C2B88D3EF00F43BD9 /* TextInputView.swift */; };
+		161128C92B8B8C0600176CAF /* SoundWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161128C82B8B8C0600176CAF /* SoundWaveView.swift */; };
 		168B60BC2B877A25003BDD02 /* AssistantIAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168B60BB2B877A25003BDD02 /* AssistantIAApp.swift */; };
 		168B60BE2B877A25003BDD02 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168B60BD2B877A25003BDD02 /* ContentView.swift */; };
 		168B60C02B877A26003BDD02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 168B60BF2B877A26003BDD02 /* Assets.xcassets */; };
 		168B60C32B877A26003BDD02 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 168B60C22B877A26003BDD02 /* Preview Assets.xcassets */; };
+		168B60CC2B877CE2003BDD02 /* SpeechRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168B60CB2B877CE2003BDD02 /* SpeechRecognition.swift */; };
+		168B60CE2B877CF5003BDD02 /* ImageRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168B60CD2B877CF5003BDD02 /* ImageRecognition.swift */; };
+		168B60D12B878B88003BDD02 /* ChatAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168B60D02B878B88003BDD02 /* ChatAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1606F9892B88CCB700F43BD9 /* VoiceRecognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecognition.swift; sourceTree = "<group>"; };
+		1606F98C2B88D3EF00F43BD9 /* TextInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputView.swift; sourceTree = "<group>"; };
+		161128C82B8B8C0600176CAF /* SoundWaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundWaveView.swift; sourceTree = "<group>"; };
 		168B60B82B877A25003BDD02 /* AssistantIA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssistantIA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		168B60BB2B877A25003BDD02 /* AssistantIAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantIAApp.swift; sourceTree = "<group>"; };
 		168B60BD2B877A25003BDD02 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		168B60BF2B877A26003BDD02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		168B60C22B877A26003BDD02 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		168B60CB2B877CE2003BDD02 /* SpeechRecognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognition.swift; sourceTree = "<group>"; };
+		168B60CD2B877CF5003BDD02 /* ImageRecognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRecognition.swift; sourceTree = "<group>"; };
+		168B60CF2B878140003BDD02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		168B60D02B878B88003BDD02 /* ChatAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,9 +45,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1606F98B2B88D3D100F43BD9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1606F98C2B88D3EF00F43BD9 /* TextInputView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		161128CC2B8BA23400176CAF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		168B60AF2B877A25003BDD02 = {
 			isa = PBXGroup;
 			children = (
+				161128CC2B8BA23400176CAF /* Resources */,
 				168B60BA2B877A25003BDD02 /* AssistantIA */,
 				168B60B92B877A25003BDD02 /* Products */,
 			);
@@ -51,8 +80,12 @@
 		168B60BA2B877A25003BDD02 /* AssistantIA */ = {
 			isa = PBXGroup;
 			children = (
+				1606F98B2B88D3D100F43BD9 /* Components */,
+				168B60CA2B877C54003BDD02 /* Views */,
+				168B60C92B877C4B003BDD02 /* Models */,
 				168B60BB2B877A25003BDD02 /* AssistantIAApp.swift */,
 				168B60BD2B877A25003BDD02 /* ContentView.swift */,
+				168B60CF2B878140003BDD02 /* Info.plist */,
 				168B60BF2B877A26003BDD02 /* Assets.xcassets */,
 				168B60C12B877A26003BDD02 /* Preview Content */,
 			);
@@ -65,6 +98,25 @@
 				168B60C22B877A26003BDD02 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		168B60C92B877C4B003BDD02 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				168B60CB2B877CE2003BDD02 /* SpeechRecognition.swift */,
+				168B60CD2B877CF5003BDD02 /* ImageRecognition.swift */,
+				168B60D02B878B88003BDD02 /* ChatAPI.swift */,
+				1606F9892B88CCB700F43BD9 /* VoiceRecognition.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		168B60CA2B877C54003BDD02 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				161128C82B8B8C0600176CAF /* SoundWaveView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +190,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				168B60BE2B877A25003BDD02 /* ContentView.swift in Sources */,
+				168B60CE2B877CF5003BDD02 /* ImageRecognition.swift in Sources */,
+				168B60D12B878B88003BDD02 /* ChatAPI.swift in Sources */,
+				168B60CC2B877CE2003BDD02 /* SpeechRecognition.swift in Sources */,
+				1606F98A2B88CCB700F43BD9 /* VoiceRecognition.swift in Sources */,
+				161128C92B8B8C0600176CAF /* SoundWaveView.swift in Sources */,
+				1606F98D2B88D3EF00F43BD9 /* TextInputView.swift in Sources */,
 				168B60BC2B877A25003BDD02 /* AssistantIAApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +333,7 @@
 				DEVELOPMENT_TEAM = X25GMKM57Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AssistantIA/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +363,7 @@
 				DEVELOPMENT_TEAM = X25GMKM57Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AssistantIA/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
